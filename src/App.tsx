@@ -269,7 +269,7 @@ const TreeTable: React.FC<{ data: DataItem[], tableColumn: columnValue[] }> = ({
   // RENDER TABLE DATA
   const renderRows = (items: DataItem[], level: string) => {
     return items.map((item) => (
-      <React.Fragment key={item.id}>
+      <React.Fragment key={item?.id}>
         <TableRow key={item.id}>
           <TableCell style={{ paddingLeft: level === 'child' ? '50px' : '' }}>
             {item.children ? (
